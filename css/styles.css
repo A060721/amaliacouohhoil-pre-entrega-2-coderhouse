@@ -1,0 +1,126 @@
+ * {
+  margin: 0;
+  margin:0;
+ }
+
+ body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(226, 194, 255);
+ }
+
+ header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  box-shadow: 0px 2px 4px black;
+  text-align: center;
+  padding: 10px 20px;
+ }
+.logo{
+ width: 100px;
+ height: 100px;
+ text-align: center;
+}
+
+.navbar{
+  display: inline-block;
+  justify-content: center;
+  margin: 2px;
+
+ }
+h1,
+h2{
+  text-align: center;
+  text-decoration: underline;
+  margin: 20px;
+
+}
+ .contenedorzonasarqueologicas{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(231, 146, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: (3,1fr);
+ }
+ .zonas{
+  margin: 20px;
+  border-radius: 10px;
+ justify-content: center;
+ }
+iframe{
+ display: block;
+margin: auto;
+}
+form{
+  margin-top: 20px;
+}
+label{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+
+}
+input,textarea{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid beige;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+
+}
+.imgcontenedor {
+
+  width: 300px;
+  height: 300px;
+}
+
+.imgnuestraszonas{
+  width: 100%;
+  display: block;
+  height: auto;
+}
+div{
+  text-align: center;
+}
+
+footer{
+ margin: 20px;
+ padding: 20px;
+ border-top: 1px solid black;
+ text-align: center;
+
+}
+
+@media ( max-width:1023px){
+  header{
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  .contenedorzonasarqueologicas{
+    margin: 5vh;
+    font-size: inherit;
+
+
+  }
+  footer{
+  flex-direction: column;
+  text-align: center;
+  }
+}
+
+@media( max-width:420px){
+  .contenedorzonasarqueologicas{
+    grid-template-columns: 1fr;
+  }
+}
